@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Guide</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>   
+  <!-- <script src="https://kit.fontawesome.com/a47d6090dc.js" crossorigin="anonymous"></script> -->
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 2px;
+      text-align: center;
+      min-width: 80px;
+
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <p class="bg-dark text-center text-white p-0 m-0" id="time"></p>
+        <p class="bg-dark text-white py-2 m-0 d-flex justify-content-around" id="content"></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 border " style="overflow: scroll; height: 88vh;">
+                <table id="myTable">
+                    <thead>
+                      <tr>
+                        <th>Weeks</th>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thur</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+
+<script src="./js/index.js"></script>
+
+</body>
+</html>
