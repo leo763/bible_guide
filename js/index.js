@@ -209,11 +209,8 @@ setInterval(() => {
                             books[index][index1][6]++;
                         } 
 
-                        cell.innerHTML = books[index][index1][0] + (books[index][index1][5] !== 'formula' ? ('<br>' + (books[index][index1][3]+1) + '-' + (books[index][index1][3] + range)) : '');
-                        books[index][index1][4] = books[index][index1][3];
-                        books[index][index1][3] = books[index][index1][3] + range;
-                        if (weekNumber === i-1) {
-                            week = i;
+                        if (weekNumber === i+1) {
+                            week = weekNumber;
                             cell.classList = 'text-white bg-secondary';
                             if (dayOfWeek === j-1) {
                                 // cell.style.backgroundColor = 'green';
@@ -222,8 +219,11 @@ setInterval(() => {
                                 book =  books[index][index1][0] + (books[index][index1][5] !== 'formula' ? ('(' + (books[index][index1][3]+1) + '-' + (books[index][index1][3] + range)+ ')') : '');
                             }
                         }
- 
 
+                        cell.innerHTML = books[index][index1][0] + (books[index][index1][5] !== 'formula' ? ('<br>' + (books[index][index1][3]+1) + '-' + (books[index][index1][3] + range)) : '');
+                        books[index][index1][4] = books[index][index1][3];
+                        books[index][index1][3] = books[index][index1][3] + range;
+ 
                         break;  
                     }
                 }
