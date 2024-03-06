@@ -21,7 +21,7 @@ setInterval(() => {
 
     // Get the day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
     var date1 = currentDate1.getDate() < 10 ? '0'+currentDate1.getDate() : currentDate1.getDate();
-    var mon1 = currentDate1.getMonth() < 10 ? '0'+currentDate1.getMonth() : currentDate1.getMonth();
+    var mon1 = currentDate1.getMonth() < 10 ? '0'+(currentDate1.getMonth() + 1) : currentDate1.getMonth() + 1;
     var yr1 = currentDate1.getFullYear();
     var hr1 = currentDate1.getHours() < 10 ? '0'+currentDate1.getHours() : currentDate1.getHours();
     var min1 = currentDate1.getMinutes() < 10 ? '0'+currentDate1.getMinutes() : currentDate1.getMinutes();
