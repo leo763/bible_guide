@@ -10,7 +10,7 @@ var dayOfWeek = currentDate.getDay();
 // The ISO week date system is used, where weeks start on Monday
 // The first week of the year contains January 4th
 var onejan = new Date(currentDate.getFullYear(), 0, 1);
-var weekNumber = Math.ceil((((currentDate - onejan) / 86400000) + onejan.getDay() - 1) / 7);
+var weekNumber = Math.ceil((((currentDate - onejan) / 86400000) + onejan.getDay()) / 7);
 // var weekNumber1 = Math.ceil((((currentDate - onejan) / 86400000) + onejan.getDay() + 1) / 7);
 
 
