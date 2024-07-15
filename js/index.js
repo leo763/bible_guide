@@ -217,7 +217,7 @@ setInterval(() => {
                                 cell.classList = 'text-white bg-primary';
                                 cell.focus();
                                 book =  books[index][index1][0] + (books[index][index1][5] !== 'formula' ? ('(' + (books[index][index1][3]+1) + '-' + (books[index][index1][3] + range)+ ')') : '');
-                                cell.onclick(alert(book));
+                                cell.onClick(alert(book));
                             }
                         }
 
